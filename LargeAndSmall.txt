@@ -1,0 +1,38 @@
+package loops;
+import java.util.Scanner;
+
+public class LargestAndSmallest {
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+
+		Scanner scan = new Scanner(System.in);
+		int num, temp;
+		int large=0, small=0;
+		char i;
+		int count =1;
+		do
+		{
+			System.out.println("Enter the number : ");
+			num = scan.nextInt();
+			if(count==1) {
+				large=small=num;
+			}
+			if(num>large)
+			{
+				large = num;
+			}
+			else if(num<small)
+			{
+				small = num;
+			}
+			System.out.print("Do you want to continue ?");
+			i = scan.next().charAt(0);	
+			count = 0;
+		}while(i!='n');
+		System.out.println();
+		System.out.println("The largest number is "+large);
+		System.out.println("The Smallest number is "+small);
+	}
+}
