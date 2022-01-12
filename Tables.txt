@@ -1,0 +1,30 @@
+package loops;
+import java.util.*;
+
+public class Table {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner tab = new Scanner(System.in);
+		//getting input from user
+		System.out.println("Enter the interger of the table :");
+		int num = tab.nextInt();
+		System.out.println("Enter the times of table to be printed :");
+		int time = tab.nextInt();
+		int mul=0;
+		// if condition for checking input is positive integer
+		if(num>0&&time>0)
+		{
+		//for loops for multiplying tables
+		for(int i=1; i<=time; i++)
+		{
+			mul = num*i;
+			System.out.println(num+" X "+i+" = "+mul);
+		}
+		}
+		else {
+			System.out.println("Enter the positive integer");
+		}
+	}
+}
