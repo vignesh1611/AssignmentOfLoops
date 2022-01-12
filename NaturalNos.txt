@@ -1,0 +1,22 @@
+package loops;
+
+import java.util.Scanner;
+
+public class NaturalNos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner n = new Scanner(System.in);
+		System.out.println("Enter the no of numbers to be printed : ");
+		//input for how much to be printed
+		int num = n.nextInt();
+		int sum = 0;
+		//looping for printing required number 
+		for(int i=1; i<=num; i++)
+		{
+			sum = sum+i;
+		}
+		System.out.println("The sum of "+num+" natural nos is "+ sum);
+	}
+
+}
