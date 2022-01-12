@@ -1,0 +1,24 @@
+package loops;
+import java.util.*;
+
+public class RevOfNum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner num = new Scanner(System.in);
+		
+		System.out.println("Enter the number to be reversed : ");
+		int nos = num.nextInt();
+		int temp = nos;
+		int rem, rev=0;
+		while(nos>0)
+		{
+			rem = nos%10;
+			rev = rev*10 + rem;
+			nos = nos/10;
+		}
+		System.out.println("Reverse of "+temp+" : "+ rev);
+	}
+
+}
