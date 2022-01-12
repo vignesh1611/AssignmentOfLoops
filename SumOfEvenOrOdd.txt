@@ -1,0 +1,28 @@
+package loops;
+import java.util.*;
+public class SumOfEvenOrOdd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner num = new Scanner(System.in);
+		System.out.println("Enter the number of inputs : ");
+		int size = num.nextInt();
+		System.out.println("Enter the set of numbers : ");
+		int x =0, y=0;
+		for(int i=0; i<size; i++)
+		{
+			int no = num.nextInt();
+			if(no%2==0)
+			{
+				x = x+no;
+			}
+			if(no%2!=0)
+			{
+				y = y+no;
+			}
+		}
+		System.out.println("Sum of Even Nos. is "+x+" and Sum of Odd Nos. is "+y);
+	}
+
+}
